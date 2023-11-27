@@ -9,8 +9,8 @@ let init = ((length) => {
 
 // 初始化视图，重新渲染数组dom的方法
 const setDom = ((list) =>{
-    const boxDom = document.querySelector('.box')
     const fn = (list) => {
+        const boxDom = document.querySelector('.box')
         boxDom.innerHTML = ''
         list.forEach(itme => {
             const node = document.createElement('div')
